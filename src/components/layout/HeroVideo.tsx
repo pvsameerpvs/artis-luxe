@@ -7,20 +7,25 @@ interface HeroVideoProps {
   videoUrl: string;
   title: string;
   description: string;
+  posterImage?: string;
 }
 
-export function HeroVideo({ company, videoUrl, title, description }: HeroVideoProps) {
+export function HeroVideo({ company, videoUrl, title, description, posterImage }: HeroVideoProps) {
   const isLuxe = company === "luxe";
 
   return (
     <section className="relative min-h-[100dvh] w-full overflow-hidden">
       <div className="absolute inset-0 bg-muted" />
+      {posterImage && (
+        <img src={posterImage} alt={title} className="absolute inset-0 h-full w-full object-cover" />
+      )}
 
       <video
         autoPlay
         loop
         muted
         playsInline
+        poster={posterImage}
         className="absolute inset-0 h-full w-full object-cover"
       >
         <source src={videoUrl} type="video/mp4" />

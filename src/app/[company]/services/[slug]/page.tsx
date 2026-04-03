@@ -3,7 +3,6 @@ import { ArrowLeft, CheckCircle2, MoveRight } from "lucide-react";
 import { notFound } from "next/navigation";
 
 import { getServiceVisual } from "@/components/services/service-visuals";
-import { buttonVariants } from "@/components/ui/button-variants";
 import { getServiceBySlug, getServices } from "@/data/services";
 
 export default async function ServiceDetailPage({
@@ -31,7 +30,7 @@ export default async function ServiceDetailPage({
       {/* Header Section */}
       <section className="relative h-[60svh] w-full overflow-hidden">
         <img
-          src={visual.image}
+          src={service.image}
           alt={service.title}
           className="absolute inset-0 h-full w-full object-cover"
         />
