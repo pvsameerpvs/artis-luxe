@@ -6,7 +6,7 @@ export function Navbar({ company }: { company: string }) {
   const isLuxe = company === "luxe";
 
   return (
-    <header className="sticky top-0 z-50 w-full px-4 pt-4">
+    <header className="fixed top-0 z-50 w-full px-4 pt-4">
       <div className="container mx-auto">
         <div className="rounded-[1.9rem] border border-border/70 bg-background/82 px-4 py-3 shadow-[0_28px_70px_-42px_rgba(15,23,42,0.45)] backdrop-blur-xl">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
