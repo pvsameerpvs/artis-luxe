@@ -1,40 +1,39 @@
+import { ServiceShowcaseCard } from "@/components/services/ServiceShowcaseCard";
 import { getServices } from "@/data/services";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import Link from "next/link";
-import { buttonVariants } from "@/components/ui/button-variants";
 
-export default async function ServicesPage({ params }: { params: Promise<{ company: string }> }) {
+export default async function ServicesPage({
+  params,
+}: {
+  params: Promise<{ company: string }>;
+}) {
   const { company } = await params;
   const isLuxe = company === "luxe";
   const services = getServices(company);
 
   return (
-    <div className="py-20 container mx-auto px-4">
-      <div className="text-center mb-16 max-w-3xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
-        <p className="text-xl text-muted-foreground">
-          {isLuxe 
-            ? "We offer a comprehensive suite of interior design and luxury implementation services to completely transform your environment." 
-            : "Explore our wide range of technical maintenance and expert installation services."}
-        </p>
-      </div>
+    <div className="py-20 md:py-24">
+      <div className="container mx-auto px-4">
+        <div className="mx-auto mb-16 max-w-4xl text-center">
+          <div className="mx-auto mb-6 h-px w-20 bg-primary/35" />
+          <h1 className="text-5xl font-semibold md:text-6xl">Our Services</h1>
+          <p className="mt-5 text-lg leading-8 text-muted-foreground md:text-xl">
+            {isLuxe
+              ? "We offer a comprehensive suite of interior design and luxury implementation services to completely transform your environment."
+              : "Explore our wide range of technical maintenance and expert installation services."}
+          </p>
+        </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {services.map((service) => (
-          <Card key={service.slug} className="flex flex-col h-full bg-card hover:shadow-lg transition-all duration-300 border-none shadow-md">
-            <CardHeader>
-              <CardTitle className="text-xl leading-tight">{service.title}</CardTitle>
-            </CardHeader>
-            <CardContent className="flex-1 flex flex-col justify-between">
-              <CardDescription className="text-base text-foreground mb-8">
-                {service.description}
-              </CardDescription>
-              <Link href={`/${company}/services/${service.slug}`} className={buttonVariants({ className: "w-full mt-auto bg-primary hover:bg-primary-hover text-white" })}>
-                Service Details
-              </Link>
-            </CardContent>
-          </Card>
-        ))}
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
+          {services.map((service, index) => (
+            <ServiceShowcaseCard
+              key={service.slug}
+              company={company}
+              service={service}
+              index={index}
+              buttonLabel="Service Details"
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
