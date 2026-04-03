@@ -10,13 +10,13 @@ export const luxeServices: Service[] = [
     title: "Computer Network & Infrastructure Installation & Maintenance",
     slug: "computer-network-infrastructure",
     description: "Expert installation and maintenance of reliable computer networks and IT infrastructure for modern spaces.",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=800&auto=format&fit=crop"
+    image: "/networking.jpg"
   },
   {
     title: "Air-Conditioning, Ventilations & Air Filtration Systems Installation & Maintenance",
     slug: "hvac-installation-maintenance",
     description: "Comprehensive HVAC services ensuring optimal air quality and temperature control.",
-    image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=800&auto=format&fit=crop"
+    image: "/Air-Conditioning.jpg"
   },
   {
     title: "Floor & Wall Tiling Works",
@@ -28,7 +28,7 @@ export const luxeServices: Service[] = [
     title: "Carpentry & Wood Flooring Works",
     slug: "carpentry-wood-flooring",
     description: "Custom carpentry and exquisite wood flooring adding warmth and elegance to your interiors.",
-    image: "https://images.unsplash.com/photo-1581858718255-6e0ad859aaa5?q=80&w=800&auto=format&fit=crop"
+    image: "/Carpentry.jpg"
   },
   {
     title: "Automated Car Parking Systems Installation & Maintenance",
@@ -46,13 +46,13 @@ export const luxeServices: Service[] = [
     title: "Painting Contracting",
     slug: "painting-contracting",
     description: "Professional painting services using high-quality materials for a flawless finish.",
-    image: "https://images.unsplash.com/photo-1589939705384-5185138a04b9?q=80&w=800&auto=format&fit=crop"
+    image: "/PaintingContracting.jpg"
   },
   {
     title: "Building Maintenance",
     slug: "building-maintenance",
     description: "Comprehensive building maintenance ensuring safety, functionality, and longevity.",
-    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=800&auto=format&fit=crop"
+    image: "/BuildingMaintenance.jpg"
   },
   {
     title: "False Ceiling & Light Partitions Installation",
@@ -70,7 +70,7 @@ export const luxeServices: Service[] = [
     title: "Glass & Aluminum Installation & Maintenance",
     slug: "glass-aluminum-installation",
     description: "Sleek and durable glass and aluminum solutions for contemporary architectural needs.",
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop"
+    image: "/GlassAluminum.jpg"
   }
 ];
 
@@ -79,43 +79,43 @@ export const technicalServices: Service[] = [
     title: "Wallpaper Fixing Works",
     slug: "wallpaper-fixing-works",
     description: "Professional wallpaper application for a seamless and durable finish.",
-    image: "https://images.unsplash.com/photo-1615529328331-f8917597711f?q=80&w=800&auto=format&fit=crop"
+    image: "/WallpaperFixingWorks.jpg"
   },
   {
     title: "Plumbing & Sanitary Installation",
     slug: "plumbing-sanitary-installation",
     description: "Expert plumbing services ensuring efficient and hygienic sanitary systems.",
-    image: "https://images.unsplash.com/photo-1585704032915-c3400ca1f965?q=80&w=800&auto=format&fit=crop"
+    image: "/Plumbing.jpg"
   },
   {
     title: "Carpentry & Wood Flooring Works",
     slug: "carpentry-wood-flooring",
     description: "High-quality woodwork and flooring tailored to technical and structural requirements.",
-    image: "https://images.unsplash.com/photo-1581858718255-6e0ad859aaa5?q=80&w=800&auto=format&fit=crop"
+    image: "/Carpentry-1.jpg"
   },
   {
     title: "Electromechanical Equipment Installation and Maintenance",
     slug: "electromechanical-equipment",
     description: "Specialized maintenance and installation of robust electromechanical equipment.",
-    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=800&auto=format&fit=crop"
+    image: "/Equipment.jpg"
   },
   {
     title: "Engraving & Ornamentation Works",
     slug: "engraving-ornamentation-works",
     description: "Detailed engraving and ornamentation adding unique character to architectural elements.",
-    image: "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=800&auto=format&fit=crop"
+    image: "/Engraving.jpg"
   },
   {
     title: "Painting Contracting",
     slug: "painting-contracting",
     description: "Industrial and commercial painting solutions designed for durability and protection.",
-    image: "https://images.unsplash.com/photo-1589939705384-5185138a04b9?q=80&w=800&auto=format&fit=crop"
+    image: "/PaintingContracting.jpg"
   },
   {
     title: "Air-Conditioning, Ventilations & Air Filtration Systems Installation & Maintenance",
     slug: "hvac-installation-maintenance",
     description: "Advanced HVAC systems installation tailored for technical and commercial spaces.",
-    image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=800&auto=format&fit=crop"
+    image: "/Air-Conditioning.jpg"
   },
   {
     title: "Floor & Wall Tiling Works",
@@ -127,13 +127,13 @@ export const technicalServices: Service[] = [
     title: "Insulation Contracting",
     slug: "insulation-contracting",
     description: "Superior insulation services maximizing thermal efficiency and acoustic control.",
-    image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=800&auto=format&fit=crop"
+    image: "/Insulation.png"
   },
   {
     title: "False Ceiling & Light Partitions Installation",
     slug: "false-ceiling-light-partitions",
     description: "Functional and aesthetic ceiling and partition solutions for versatile spaces.",
-    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800&auto=format&fit=crop"
+    image: "/False-Ceiling.jpg"
   }
 ];
 

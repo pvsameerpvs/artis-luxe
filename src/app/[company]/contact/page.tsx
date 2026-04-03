@@ -146,7 +146,7 @@ export default async function ContactPage({
       {/* Map Section */}
       <section className="container mx-auto px-4 py-8 md:py-16">
          <div className="h-[400px] bg-muted w-full border border-border/40 relative flex items-center justify-center overflow-hidden grayscale">
-            <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?q=80&w=1200&auto=format&fit=crop" className="absolute inset-0 w-full h-full object-cover opacity-60" alt="Map View" />
+            <img src="/happy.jpg" className="absolute inset-0 w-full h-full object-cover opacity-60" alt="Map View" />
             <div className="relative z-10 size-16 bg-primary rounded-full flex items-center justify-center shadow-2xl animate-pulse">
                <div className="size-4 bg-white rounded-full" />
             </div>

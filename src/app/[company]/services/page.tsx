@@ -59,7 +59,7 @@ export default async function ServicesPage({
       <section className="container mx-auto px-4 py-16 md:py-24 border-t border-border/40">
         <div className="relative overflow-hidden bg-black py-24 px-8 md:px-16 text-center text-white">
            <img 
-             src={isLuxe ? "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2000&auto=format&fit=crop" : "https://images.unsplash.com/photo-1541889813583-8a303649479b?q=80&w=2000&auto=format&fit=crop"} 
+             src={isLuxe ? "/happy.jpg" : "/happy.jpg"} 
              className="absolute inset-0 h-full w-full object-cover opacity-40" 
              alt="CTA Background"
            />

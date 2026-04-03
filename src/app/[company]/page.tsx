@@ -36,7 +36,7 @@ export default async function CompanyHome({
     sectors: [
       { title: "Luxury Villas", src: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=600&auto=format&fit=crop" },
       { title: "Fine Dining", src: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=600&auto=format&fit=crop" },
-      { title: "Boutique Hotels", src: "https://images.unsplash.com/photo-1542314831-c6a4d14d231de?q=80&w=600&auto=format&fit=crop" },
+      { title: "Boutique Hotels", src: "/BoutiqueHotels.jpg" },
       { title: "High-end Retail", src: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=600&auto=format&fit=crop" },
       { title: "Palaces", src: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?q=80&w=600&auto=format&fit=crop" },
       { title: "Private Yachts", src: "https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?q=80&w=600&auto=format&fit=crop" }
@@ -73,7 +73,7 @@ export default async function CompanyHome({
     ],
     servicesTitle: "Core Services",
     featuredServices: allServices.slice(0, 3),
-    bannerImage: "https://images.unsplash.com/photo-1541889813583-8a303649479b?q=80&w=2000&auto=format&fit=crop",
+    bannerImage: "/Engineering-work.jpg",
     bannerTitle: "Engineering Reliable Infrastructure",
     bannerDesc: "Excellence in Maintenance & Electromechanical Services",
     whyUsDesc1: "At Artis Technical, we specialize in delivering robust, high-quality technical installations and civil works across the industrial and commercial sectors in the UAE.",
@@ -83,8 +83,8 @@ export default async function CompanyHome({
       { title: "Industrial", src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=600&auto=format&fit=crop" },
       { title: "Healthcare", src: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=600&auto=format&fit=crop" },
       { title: "Warehouses", src: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=600&auto=format&fit=crop" },
-      { title: "Education", src: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=600&auto=format&fit=crop" },
-      { title: "Infrastructure", src: "https://images.unsplash.com/photo-1541889813583-8a303649479b?q=80&w=600&auto=format&fit=crop" }
+      { title: "Education", src: "/Education.jpg" },
+      { title: "Infrastructure", src: "/Infrastructure.png" }
     ],
     videoImage: "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=1200&auto=format&fit=crop",
     trustTitle: "Trusted by the world's leading industries.",

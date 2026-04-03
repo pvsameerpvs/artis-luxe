@@ -16,8 +16,8 @@ const technicalData = {
   subtitle: "Delivering uncompromising quality in technical and industrial services.",
   story1: "Artis Technical was built to answer the growing demand for highly specialized, reliable, and efficient infrastructure and maintenance services.",
   story2: "We pride ourselves on executing complex projects with precision, safety, and operational excellence. Our extensive portfolio includes warehouses, large-scale commercial buildings, factories, infrastructure developments, and healthcare facilities.",
-  image1: "https://images.unsplash.com/photo-1541889813583-8a303649479b?q=80&w=800&auto=format&fit=crop",
-  image2: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop"
+  image1: "/Deliveringuncompromising.png",
+  image2: "/Deliveringuncompromising-2.png"
 };
 
 export default async function AboutPage({
@@ -97,7 +97,7 @@ export default async function AboutPage({
               icon: Sparkles, 
               title: "Excellence", 
               desc: "We never compromise on the quality of our materials or our execution. Every detail matters.",
-              img: "https://images.unsplash.com/photo-1542314831-c6a4d14d231de?q=80&w=400&auto=format&fit=crop"
+              img: "/Excellence.jpg"
             },
             { 
               icon: ShieldCheck, 
