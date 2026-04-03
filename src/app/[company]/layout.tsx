@@ -1,6 +1,8 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { MobileNavbar } from "@/components/layout/MobileNavbar";
+
+
 import { notFound } from "next/navigation";
 
 export default async function CompanyLayout({
@@ -27,6 +29,8 @@ export default async function CompanyLayout({
       </main>
       <Footer company={company} />
       <MobileNavbar company={company} />
+    
+     
     </div>
   );
 }

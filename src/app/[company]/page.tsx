@@ -50,7 +50,7 @@ export default async function CompanyHome({
     ],
     featureMain: {
       title: "Timeless Elegance: The Return of Classic Marble in Modern Homes",
-      src: "https://images.unsplash.com/photo-1600566753086-00f18efc2291?q=80&w=1200&auto=format&fit=crop"
+      src: "/marble.png"
     },
     featuresListDesc: "Keep up to date with Artis Luxe's latest design trends, premium materials, and luxury features.",
     features: [
