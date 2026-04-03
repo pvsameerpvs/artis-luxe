@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { MoveRight, ExternalLink } from "lucide-react";
 import { Facebook, Instagram, Linkedin, Youtube } from "@/components/ui/social-icons";
 import { getServices } from "@/data/services";
@@ -83,8 +84,13 @@ export function Footer({ company }: { company: string }) {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-xs font-medium tracking-widest uppercase text-gray-500">
-          <div>
-             Artis {isLuxe ? "Luxe" : "Technical"} © {new Date().getFullYear()}
+          <div className="flex items-center gap-4">
+             <div className="relative size-12 overflow-hidden rounded-lg bg-white p-1.5">
+               <Image src="/logo.png" alt="Artis Logo" fill className="object-contain" />
+             </div>
+             <span className="text-sm font-bold tracking-tight">
+               Artis {isLuxe ? "Luxe" : "Technical"} © {new Date().getFullYear()}
+             </span>
           </div>
           <div className="flex flex-wrap justify-center gap-6 md:gap-10">
             <Link href="#" className="hover:text-white transition-colors">Terms & Conditions</Link>

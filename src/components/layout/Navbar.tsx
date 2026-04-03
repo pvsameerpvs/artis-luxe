@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { CompanyToggle } from "./CompanyToggle";
@@ -21,11 +22,11 @@ export function Navbar({ company }: { company: string }) {
       <div className="container mx-auto">
         <div className="rounded-[1.9rem] border border-border/70 bg-background/85 px-4 py-3 shadow-[0_28px_70px_-42px_rgba(15,23,42,0.45)] backdrop-blur-xl">
           <div className="flex items-center justify-between">
-            <Link href={`/${company}`} className="flex items-center gap-3">
-              <span className="flex size-11 items-center justify-center rounded-[1.1rem] border border-primary/15 bg-primary text-sm font-semibold uppercase tracking-[0.18em] text-white">
-                {isLuxe ? "AL" : "AT"}
-              </span>
-              <span className="block font-heading text-[1.65rem] leading-none">
+            <Link href={`/${company}`} className="flex items-center gap-4 group">
+              <div className="relative size-16 md:size-20 overflow-hidden">
+                <Image src="/logo.png" alt="Artis Logo" fill className="object-contain" />
+              </div>
+              <span className="block font-heading text-2xl md:text-3xl leading-none tracking-tight">
                 {isLuxe ? "Artis Luxe" : "Artis Technical"}
               </span>
             </Link>
