@@ -1,21 +1,16 @@
 "use client";
 
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 
 export function CompanyToggle({ company }: { company: string }) {
   const router = useRouter();
-  const pathname = usePathname();
 
   const handleToggle = (newCompany: string) => {
-    // Replace the current company in the pathname with the new one
-    const segments = pathname.split('/').filter(Boolean);
-    if (segments.length > 0) {
-      segments[0] = newCompany;
-      router.push(`/${segments.join('/')}`);
-    } else {
-      router.push(`/${newCompany}`);
-    }
+    if (newCompany === company) return;
+    
+    // Always navigate to the home page of the selected company
+    router.push(`/${newCompany}`);
   };
 
   return (
